@@ -22,7 +22,6 @@
     mo    = merge origin/master
     p     = push
     pop   = stash pop
-    prune = remote prune upstream
     re    = remote
     st    = status
     tmp   = stash save
