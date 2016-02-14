@@ -61,11 +61,8 @@ set pastetoggle=<C-]>
 nnoremap <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 
 "netrwをtree表示に設定
-noremap <C-t> :call TREE()<CR>
-function! TREE()
-  let netrw_liststyle=3
-  :25vs|e.
-endfunction
+let g:netrw_liststyle=3
+nnoremap <C-t> :25Ve.<CR>
 
 "ステータスライン
 set laststatus=2
