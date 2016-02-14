@@ -31,11 +31,11 @@ set noundofile
 " LEADERを,に変更
 let mapleader = ","
 "括弧を自動で閉じる
-inoremap {<ENTER> {}<LEFT>
-inoremap [<ENTER> []<LEFT>
-inoremap (<ENTER> ()<LEFT>
-inoremap "<ENTER> ""<LEFT>
-inoremap '<ENTER> ''<LEFT>
+inoremap {<CR> {}<LEFT>
+inoremap [<CR> []<LEFT>
+inoremap (<CR> ()<LEFT>
+inoremap "<CR> ""<LEFT>
+inoremap '<CR> ''<LEFT>
 "長い行を折り返さない(wrap:折り返す)
 set nowrap
 "yankでclipboardにコピーする
@@ -60,7 +60,7 @@ set pastetoggle=<C-]>
 "ctags ジャンプ(list表示, 新規タブ)
 nnoremap <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 "新規タブ表示
-nnoremap <C-t> :tabe.<ENTER>
+nnoremap <C-t> :tabe.<CR>
 "ステータスライン
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
