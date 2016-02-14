@@ -9,6 +9,7 @@ set ruler
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set nowrap
 set number
 set list
 set listchars=tab:>-,extends:<,trail:-
@@ -16,31 +17,31 @@ set smartcase
 set t_Co=256
 set helplang=ja,en
 set showtabline=2
-set background=dark
-colorscheme hybrid
 set hlsearch
 set autoindent
 set smartindent
 set autoread
 set nf=""
-"自動改行しない
-set formatoptions=q
 set nobackup
 set noswapfile
 set noundofile
+"INSERTモードでバックスペースを使う
+set backspace=indent,eol,start
+"自動改行しない
+set formatoptions=q
+"yankでclipboardにコピーする
+set clipboard+=unnamed
+set clipboard=unnamedplus
+set background=dark
+colorscheme hybrid
 " LEADERを,に変更
 let mapleader = ","
-"括弧を自動で閉じる
+
 inoremap {<CR> {}<LEFT>
 inoremap [<CR> []<LEFT>
 inoremap (<CR> ()<LEFT>
 inoremap "<CR> ""<LEFT>
 inoremap '<CR> ''<LEFT>
-"長い行を折り返さない(wrap:折り返す)
-set nowrap
-"yankでclipboardにコピーする
-set clipboard+=unnamed
-set clipboard=unnamedplus
 "INSERTモードでのキー移動
 inoremap <C-j> <DOWN>
 inoremap <C-k> <Up>
@@ -48,15 +49,15 @@ inoremap <C-f> <Right>
 inoremap <C-b> <Left>
 inoremap <C-a> <Home>
 inoremap <C-e> <End>
-"INSERTモードでの文字削除
 inoremap <C-d> <Delete>
-"INSERTモードでバックスペースを使う
-set backspace=indent,eol,start
+
 "ノーマルモードで改行できる
 noremap <CR> o<ESC>
 nmap <ESC><ESC> :nohlsearch<CR><ESC>
+
 "ペースト切替
 set pastetoggle=<C-]>
+
 "ctags ジャンプ(list表示, 新規タブ)
 nnoremap <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 
