@@ -21,10 +21,10 @@ colorscheme hybrid
 set hlsearch
 set autoindent
 set smartindent
+set autoread
+set nf=""
 "自動改行しない
 set formatoptions=q
-"Ctrl-a,Ctrl-x時のインクリメントを10進数にする
-set nf=""
 set nobackup
 set noswapfile
 set noundofile
@@ -75,13 +75,11 @@ set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 
 "カレントウィンドウにのみカーソル行をハイライト
 augroup cch
-autocmd! cch
-autocmd WinLeave * set nocursorline
-autocmd WinEnter,BufRead * set cursorline
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
 augroup End
 :hi clear CursorLine
-"他で書き換えられたら自動で読み直す
-set autoread
 
 "NeoBundleの設定
 set nocompatible
@@ -112,8 +110,8 @@ autocmd FileType * setlocal formatoptions-=ro
 
 " smarty設定
 augroup PrevimSettings
-    autocmd!
-    autocmd BufNewFile,BufRead *.html set filetype=smarty
+  autocmd!
+  autocmd BufNewFile,BufRead *.html set filetype=smarty
 augroup END
 
 " taglist
