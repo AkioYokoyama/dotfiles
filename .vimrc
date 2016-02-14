@@ -59,8 +59,14 @@ nmap <ESC><ESC> :nohlsearch<CR><ESC>
 set pastetoggle=<C-]>
 "ctags ジャンプ(list表示, 新規タブ)
 nnoremap <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
-"新規タブ表示
-nnoremap <C-t> :tabe.<CR>
+
+"netrwをtree表示に設定
+noremap <C-t> :call TREE()<CR>
+function! TREE()
+  let netrw_liststyle=3
+  :25vs|e.
+endfunction
+
 "ステータスライン
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
