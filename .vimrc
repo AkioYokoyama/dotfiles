@@ -15,26 +15,18 @@ set listchars=tab:>-,extends:<,trail:-
 set smartcase
 set t_Co=256
 set helplang=ja,en
-"タブページを常に表示する
 set showtabline=2
-"colorschmeの設定
 set background=dark
 colorscheme hybrid
-"検索文字をハイライトさせる
 set hlsearch
-"自動でインデント
 set autoindent
-"新しい行を開始した時、インデントを現在行と同じにする
 set smartindent
 "自動改行しない
 set formatoptions=q
 "Ctrl-a,Ctrl-x時のインクリメントを10進数にする
 set nf=""
-"バックアップファイルを作成しない
 set nobackup
-"スワップファイルを作成しない
 set noswapfile
-"undoファイルを作成しない
 set noundofile
 " LEADERを,に変更
 let mapleader = ","
