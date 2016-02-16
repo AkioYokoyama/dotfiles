@@ -11,5 +11,4 @@ PATH=$PATH:$HOME/bin
 
 export PATH
 
-# Alias
-alias ll='ls -lA'
+source $HOME/dotfiles/.aliases
