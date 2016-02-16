@@ -51,6 +51,8 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 
+nnoremap Y y$
+
 "ノーマルモードで改行できる
 noremap <CR> o<ESC>
 nmap <ESC><ESC> :nohlsearch<CR><ESC>
@@ -94,7 +96,6 @@ if has('vim_starting')
     NeoBundle 'haya14busa/vim-easymotion'
     NeoBundle 'nathanaelkane/vim-indent-guides'
     NeoBundle 'rking/ag.vim'
-    NeoBundle 'vim-scripts/taglist.vim'
   call neobundle#end()
 endif
 filetype plugin on
@@ -112,9 +113,10 @@ augroup PrevimSettings
   autocmd BufNewFile,BufRead *.html set filetype=smarty
 augroup END
 
-" taglist
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Use_Right_Window=1
-let g:tlist_php_settings = 'php;c:class;d:constant;f:function'
-nnoremap <S-T> :TlistToggle<CR>
+" vim-indent-guides
+let g:indent_guides_enable_on_vim_startup=1
+let g:indent_guides_start_level=2
+let g:indent_guides_auto_colors=0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=239
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=241
+let g:indent_guides_guide_size = 1
