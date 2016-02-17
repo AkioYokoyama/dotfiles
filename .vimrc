@@ -59,6 +59,7 @@ nmap <ESC><ESC> :nohlsearch<CR><ESC>
 
 "ペースト切替
 set pastetoggle=<C-]>
+autocmd InsertLeave * set nopaste
 
 "ctags ジャンプ(list表示, 新規タブ)
 nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
