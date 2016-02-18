@@ -59,13 +59,10 @@ nmap <ESC><ESC> :nohlsearch<CR><ESC>
 
 "ペースト切替
 set pastetoggle=<C-]>
+autocmd InsertLeave * set nopaste
 
 "ctags ジャンプ(list表示, 新規タブ)
 nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
-
-"netrwをtree表示に設定
-let g:netrw_liststyle=3
-nnoremap <silent> <C-t> :15Ve.<CR>
 
 "ステータスライン
 set laststatus=2
@@ -96,6 +93,8 @@ if has('vim_starting')
     NeoBundle 'haya14busa/vim-easymotion'
     NeoBundle 'nathanaelkane/vim-indent-guides'
     NeoBundle 'rking/ag.vim'
+    NeoBundle 'thinca/vim-quickrun'
+    NeoBundle 'Shougo/unite.vim'
   call neobundle#end()
 endif
 filetype plugin on
@@ -120,3 +119,13 @@ let g:indent_guides_auto_colors=0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=239
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=241
 let g:indent_guides_guide_size = 1
+
+" unite
+let g:unite_source_history_yank_enable =1
+let g:unite_source_file_mru_limit = 200
+nnoremap <silent> <space>y :<C-u>Unite history/yank<CR>
+nnoremap <silent> <space>b :<C-u>Unite buffer<CR>
+nnoremap <silent> <space>f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> <space>fb :<C-u>Unite file buffer<CR>
+nnoremap <silent> <space>r :<C-u>Unite -buffer-name=register register<CR>
+nnoremap <silent> <space>u :<C-u>Unite file_mru buffer<CR>'
