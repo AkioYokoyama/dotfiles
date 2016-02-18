@@ -55,7 +55,7 @@ nnoremap Y y$
 
 "ノーマルモードで改行できる
 noremap <CR> o<ESC>
-nmap <ESC><ESC> :nohlsearch<CR><ESC>
+nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
 
 "ペースト切替
 set pastetoggle=<C-]>
