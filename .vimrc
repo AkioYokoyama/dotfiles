@@ -91,7 +91,7 @@ if has('vim_starting')
     NeoBundle 'vim-scripts/smarty-syntax'
     NeoBundle 'AkioYokoyama/vim-surround'
     NeoBundle 'haya14busa/vim-easymotion'
-    NeoBundle 'nathanaelkane/vim-indent-guides'
+    NeoBundle 'Yggdroot/indentLine'
     NeoBundle 'rking/ag.vim'
     NeoBundle 'thinca/vim-quickrun'
     NeoBundle 'Shougo/unite.vim'
@@ -113,12 +113,8 @@ augroup PrevimSettings
 augroup END
 
 " vim-indent-guides
-let g:indent_guides_enable_on_vim_startup=1
-let g:indent_guides_start_level=2
-let g:indent_guides_auto_colors=0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd   ctermbg=239
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven  ctermbg=241
-let g:indent_guides_guide_size = 1
+let g:indentLine_faster = 1
+nnoremap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 
 " unite
 let g:unite_source_history_yank_enable =1
