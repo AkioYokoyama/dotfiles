@@ -23,6 +23,7 @@ set autoindent
 set smartindent
 set autoread
 set nf=""
+set ttyfast
 set nobackup
 set noswapfile
 set noundofile
