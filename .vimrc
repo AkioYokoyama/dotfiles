@@ -63,7 +63,7 @@ inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 nnoremap Y y$
-noremap <CR> o<ESC>
+nnoremap <CR> o<ESC>
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
 nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 " }}}
@@ -87,8 +87,8 @@ if has('vim_starting')
     NeoBundle 'AkioYokoyama/vim-surround'
     NeoBundle 'haya14busa/vim-easymotion'
     NeoBundle 'Yggdroot/indentLine'
-    NeoBundle 'thinca/vim-quickrun'
     NeoBundle 'Shougo/unite.vim'
+    NeoBundle 'thinca/vim-quickrun'
     NeoBundle 'Shougo/vimproc', {'build' : {'unix':'make -f make_unix.mak',},}
   call neobundle#end()
 endif
@@ -119,6 +119,5 @@ if executable('hw')
   let g:unite_source_grep_recursive_opt = ''
 endif
 " }}}
-
 " vim:set foldmethod=marker:
 " vim:set column=3
