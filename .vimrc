@@ -87,9 +87,9 @@ if has('vim_starting')
     NeoBundle 'AkioYokoyama/vim-surround'
     NeoBundle 'haya14busa/vim-easymotion'
     NeoBundle 'Yggdroot/indentLine'
-    NeoBundle 'rking/ag.vim'
     NeoBundle 'thinca/vim-quickrun'
     NeoBundle 'Shougo/unite.vim'
+    NeoBundle 'Shougo/vimproc', {'build' : {'unix':'make -f make_unix.mak',},}
   call neobundle#end()
 endif
 filetype plugin on
@@ -109,7 +109,15 @@ nnoremap <silent> <space>b :<C-u>Unite buffer<CR>
 nnoremap <silent> <space>f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> <space>fb :<C-u>Unite file buffer<CR>
 nnoremap <silent> <space>r :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> <space>u :<C-u>Unite file_mru buffer<CR>'
+nnoremap <silent> <space>u :<C-u>Unite file_mru buffer<CR>
+nnoremap <silent> <space>g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+
+" @see http://tkengo.github.io/blog/2015/10/19/release-highway/
+if executable('hw')
+  let g:unite_source_grep_command = 'hw'
+  let g:unite_source_grep_default_opts = '--no-group --no-color'
+  let g:unite_source_grep_recursive_opt = ''
+endif
 " }}}
 
 " vim:set foldmethod=marker:
