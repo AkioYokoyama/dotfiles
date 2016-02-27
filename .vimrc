@@ -30,8 +30,10 @@ set noundofile
 set backspace=indent,eol,start
 " 自動改行しない
 set formatoptions=q
+set pastetoggle=<C-]>
 " 改行時に自動でコメントが挿入されないようにする
 autocmd FileType * setlocal formatoptions-=ro
+autocmd InsertLeave * set nopaste
 " カレントウィンドウにのみカーソル行をハイライト
 augroup cch
   autocmd! cch
@@ -46,7 +48,7 @@ set background=dark
 colorscheme hybrid
 " }}}
 
-" key mapping {{{
+" mapping {{{
 let mapleader = ","
 inoremap {<CR> {}<LEFT>
 inoremap [<CR> []<LEFT>
@@ -63,8 +65,6 @@ inoremap <C-d> <Delete>
 nnoremap Y y$
 noremap <CR> o<ESC>
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
-set pastetoggle=<C-]>
-autocmd InsertLeave * set nopaste
 nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
 " }}}
 
