@@ -26,9 +26,7 @@ set nf=""
 set nobackup
 set noswapfile
 set noundofile
-" INSERTモードでバックスペースを使う
 set backspace=indent,eol,start
-" 自動改行しない
 set formatoptions=q
 set pastetoggle=<C-]>
 " }}}
@@ -100,7 +98,6 @@ syntax on
 
 " indentLine {{{
 let g:indentLine_faster = 1
-nnoremap <silent><Leader>i :<C-u>IndentLinesToggle<CR>
 " }}}
 
 " unite {{{
