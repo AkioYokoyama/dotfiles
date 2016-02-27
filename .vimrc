@@ -31,16 +31,17 @@ set backspace=indent,eol,start
 " 自動改行しない
 set formatoptions=q
 set pastetoggle=<C-]>
-" 改行時に自動でコメントが挿入されないようにする
-autocmd FileType * setlocal formatoptions-=ro
-autocmd InsertLeave * set nopaste
-" カレントウィンドウにのみカーソル行をハイライト
-augroup cch
-  autocmd! cch
+" }}}
+
+" autocmd {{{
+augroup vimrc
+  autocmd!
+  autocmd FileType * setlocal formatoptions-=ro
+  autocmd InsertLeave * set nopaste
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
+  autocmd BufNewFile,BufRead *.html set filetype=smarty
 augroup End
-:hi clear CursorLine
 " }}}
 
 " colorscheme {{{
@@ -49,7 +50,7 @@ colorscheme hybrid
 " }}}
 
 " mapping {{{
-let mapleader = ","
+let g:mapleader = ','
 inoremap {<CR> {}<LEFT>
 inoremap [<CR> []<LEFT>
 inoremap (<CR> ()<LEFT>
@@ -76,8 +77,6 @@ set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
 " NeoBundle plugin {{{
-set nocompatible
-filetype off
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
   call neobundle#begin(expand('~/.vim/.bundle'))
@@ -97,13 +96,6 @@ endif
 filetype plugin on
 filetype indent on
 syntax on
-" }}}
-
-" smarty-syntax {{{
-augroup PrevimSettings
-  autocmd!
-  autocmd BufNewFile,BufRead *.html set filetype=smarty
-augroup END
 " }}}
 
 " indentLine {{{
