@@ -1,0 +1,6 @@
+[[plugins]]
+repo = 'AkioYokoyama/vim-snipmate'
+on_i = 1
+
+[[plugins]]
+repo = 'Yggdroot/indentLine'
