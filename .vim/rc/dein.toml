@@ -21,6 +21,9 @@ repo = 'AkioYokoyama/vim-surround'
 repo = 'haya14busa/vim-easymotion'
 
 [[plugins]]
+repo = 'Yggdroot/indentLine'
+
+[[plugins]]
 repo = 'Shougo/unite.vim'
 
 [[plugins]]
