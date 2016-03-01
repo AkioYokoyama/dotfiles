@@ -122,7 +122,7 @@ nnoremap <silent> <space>f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
 nnoremap <silent> <space>fb :<C-u>Unite file buffer<CR>
 nnoremap <silent> <space>r :<C-u>Unite -buffer-name=register register<CR>
 nnoremap <silent> <space>u :<C-u>Unite file_mru buffer<CR>
-nnoremap <silent> <space>g :<C-u>Unite grep:. -buffer-name=search-buffer<CR>
+nnoremap <silent> <space>g :<C-u>Unite grep: -buffer-name=search-buffer<CR>
 
 " @see http://tkengo.github.io/blog/2015/10/19/release-highway/
 if executable('hw')
