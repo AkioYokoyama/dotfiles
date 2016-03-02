@@ -8,6 +8,7 @@ set backspace=2
 set title
 set ruler
 set tabstop=4
+set softtabstop=4
 set shiftwidth=4
 set expandtab
 set nowrap
