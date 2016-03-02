@@ -29,14 +29,14 @@ set nobackup
 set noswapfile
 set noundofile
 set backspace=indent,eol,start
-set formatoptions=q
 set pastetoggle=<C-]>
 " }}}
 
 " autocmd {{{
 augroup vimrc
   autocmd!
-  autocmd FileType * setlocal formatoptions-=ro
+  autocmd BufEnter * setlocal formatoptions-=r
+  autocmd BufEnter * setlocal formatoptions-=o
   autocmd InsertLeave * set nopaste
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
