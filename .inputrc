@@ -1,4 +1,20 @@
+# viモードの設定
 set editing-mode vi
+$if mode=vi
+  "\C-a":beginning-of-line
+  "\C-b":backward-char
+  "\C-e":end-of-line
+  "\C-f":forward-char
+  "\C-l":clear-screen
+  "\C-n":history-search-forward
+  "\C-p":history-search-backward
+$endif
 
-"\C-p": history-search-backward
-"\C-n": history-search-forward
+set convert-meta off
+set meta-flag on
+set output-meta on
+
+# 補完時大文字小文字無視
+set completion-ignore-case on
+# ベル無
+set bell-style none
