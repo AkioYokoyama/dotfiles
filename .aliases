@@ -5,3 +5,5 @@ alias .....="cd ../../../.."
 alias ~="cd ~"
 
 alias l="ls -lA"
+
+alias emacs="set -o emacs"
