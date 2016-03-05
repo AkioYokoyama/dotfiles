@@ -1,0 +1,8 @@
+bind -v
+mysql:bind '^a' ed-move-to-beg
+mysql:bind '^b' ed-prev-char
+mysql:bind '^d' ed-delete-next-char
+mysql:bind '^e' ed-move-to-end
+mysql:bind '^f' ed-next-char
+mysql:bind '^n' ed-next-history
+mysql:bind '^p' ed-prev-history
