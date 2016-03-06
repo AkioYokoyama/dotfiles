@@ -32,21 +32,24 @@ set backspace=indent,eol,start
 set pastetoggle=<C-]>
 " }}}
 
-" autocmd {{{
-augroup vimrc
-  autocmd!
-  autocmd BufEnter * setlocal formatoptions-=r
-  autocmd BufEnter * setlocal formatoptions-=o
-  autocmd InsertLeave * set nopaste
-  autocmd WinLeave * set nocursorline
-  autocmd WinEnter,BufRead * set cursorline
-  autocmd BufNewFile,BufRead *.html set filetype=smarty
-augroup End
-" }}}
-
 " colorscheme {{{
 set background=dark
 colorscheme hybrid
+" }}}
+
+" autocmd init {{{
+augroup MyAutoCmd
+  autocmd!
+augroup End
+" }}}
+
+" autocmd {{{
+autocmd BufEnter * setlocal formatoptions-=r
+autocmd BufEnter * setlocal formatoptions-=o
+autocmd InsertLeave * set nopaste
+autocmd WinLeave * set nocursorline
+autocmd WinEnter,BufRead * set cursorline
+autocmd BufNewFile,BufRead *.html set filetype=smarty
 " }}}
 
 " mapping {{{
@@ -158,7 +161,7 @@ if dein#tap('vim-watchdogs')
     let g:watchdogs_check_CursorHold_enable    = 1
   endfunction
 
-  execute 'autocmd vimrc User' 'dein#source#vim-watchdogs'
+  execute 'autocmd MyAutoCmd User' 'dein#source#vim-watchdogs'
         \ 'call s:watchdogs_on_source()'
 endif
 " }}}
