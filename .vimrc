@@ -139,18 +139,18 @@ endif
 
 " quickrun {{{
 let g:quickrun_config = {
-\    'watchdogs_checker/_': {
-\        'hook/close_quickfix/enable_exit': 1,
-\        'hook/back_window/enable_exit':    0,
-\        'hook/back_window/priority_exit':  1,
-\        'outputter/quickfix/open_cmd':     ''
-\    },
-\    'watchdogs_checker/php': {
-\        'command': 'php',
-\        'cmdopt':  '-l -d error_reporting=E_ALL -d display_errors=1 -d display_startup_errors=1 -d log_errors=0 -d xdebug.cli_color=0',
-\        'exec':    '%c %o %s:p',
-\        'errorformat': '%m\ in\ %f\ on\ line\ %l'
-\    },
+\  'watchdogs_checker/_': {
+\    'hook/close_quickfix/enable_exit': 1,
+\    'hook/back_window/enable_exit':    0,
+\    'hook/back_window/priority_exit':  1,
+\    'outputter/quickfix/open_cmd':     ''
+\  },
+\  'watchdogs_checker/php': {
+\    'command': 'php',
+\    'cmdopt':  '-l -d error_reporting=E_ALL -d display_errors=1 -d display_startup_errors=1 -d log_errors=0 -d xdebug.cli_color=0',
+\    'exec':    '%c %o %s:p',
+\    'errorformat': '%m\ in\ %f\ on\ line\ %l'
+\  },
 \}
 "}}}
 
@@ -162,7 +162,7 @@ if dein#tap('vim-watchdogs')
   endfunction
 
   execute 'autocmd MyAutoCmd User' 'dein#source#vim-watchdogs'
-        \ 'call s:watchdogs_on_source()'
+    \ 'call s:watchdogs_on_source()'
 endif
 " }}}
 " vim:set foldmethod=marker:
