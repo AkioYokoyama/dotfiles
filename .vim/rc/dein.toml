@@ -32,3 +32,6 @@ repo = 'thinca/vim-quickrun'
 [[plugins]]
 repo = 'vim-scripts/smarty-syntax'
 on_ft = 'html'
+
+[[plugins]]
+repo = 'joonty/vdebug'
