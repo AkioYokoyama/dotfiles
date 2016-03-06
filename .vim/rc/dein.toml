@@ -2,6 +2,9 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'thinca/vim-quickrun'
+
+[[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
@@ -27,11 +30,11 @@ repo = 'Yggdroot/indentLine'
 repo = 'Shougo/unite.vim'
 
 [[plugins]]
-repo = 'thinca/vim-quickrun'
-
-[[plugins]]
 repo = 'vim-scripts/smarty-syntax'
 on_ft = 'html'
 
 [[plugins]]
 repo = 'joonty/vdebug'
+
+[[plugins]]
+repo = 'osyo-manga/shabadou.vim'

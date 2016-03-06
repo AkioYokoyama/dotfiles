@@ -133,5 +133,34 @@ if executable('hw')
   let g:unite_source_grep_recursive_opt = ''
 endif
 " }}}
+
+" quickrun {{{
+let g:quickrun_config = {
+\    'watchdogs_checker/_': {
+\        'hook/close_quickfix/enable_exit': 1,
+\        'hook/back_window/enable_exit':    0,
+\        'hook/back_window/priority_exit':  1,
+\        'outputter/quickfix/open_cmd':     ''
+\    },
+\    'watchdogs_checker/php': {
+\        'command': 'php',
+\        'cmdopt':  '-l -d error_reporting=E_ALL -d display_errors=1 -d display_startup_errors=1 -d log_errors=0 -d xdebug.cli_color=0',
+\        'exec':    '%c %o %s:p',
+\        'errorformat': '%m\ in\ %f\ on\ line\ %l'
+\    },
+\}
+"}}}
+
+" vim-watchdogs {{{
+if dein#tap('vim-watchdogs')
+  function! s:watchdogs_on_source() abort
+    let g:watchdogs_check_BufWritePost_enable  = 1
+    let g:watchdogs_check_CursorHold_enable    = 1
+  endfunction
+
+  execute 'autocmd vimrc User' 'dein#source#vim-watchdogs'
+        \ 'call s:watchdogs_on_source()'
+endif
+" }}}
 " vim:set foldmethod=marker:
 " vim:set column=3
