@@ -67,7 +67,7 @@ nnoremap <CR> o<ESC>
 nnoremap gr gT
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
 nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>
-nnoremap <silent> <F12> :tabnew $MYVIMRC<CR>
+nnoremap <silent> <LEADER><F12> :tabnew $MYVIMRC<CR>
 " }}}
 
 " StatusLine {{{
