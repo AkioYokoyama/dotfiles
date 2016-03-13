@@ -161,5 +161,35 @@ if dein#tap('vim-watchdogs')
     \ 'call s:watchdogs_on_source()'
 endif
 " }}}
+
+" vdebug {{{
+let g:vdebug_keymap = {
+\  "run"               : "<LEADER>vr",
+\  "run_to_cursor"     : "<F1>",
+\  "step_over"         : "<F2>",
+\  "step_into"         : "<F3>",
+\  "step_out"          : "<F4>",
+\  "close"             : "<LEADER>vc",
+\  "detach"            : "<F7>",
+\  "set_breakpoint"    : "<LEADER>vb",
+\  "get_context"       : "<F11>",
+\  "eval_under_cursor" : "<LEADER>ve",
+\}
+
+let g:vdebug_options= {
+\  "port" : 9000,
+\  "server" : 'localhost',
+\  "timeout" : 20,
+\  "on_close" : 'detach',
+\  "break_on_open" : 1,
+\  "ide_key" : '',
+\  "remote_path" : "",
+\  "local_path" : "",
+\  "debug_window_level" : 0,
+\  "debug_file_level" : 0,
+\  "debug_file" : "",
+\}
+" }}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3
