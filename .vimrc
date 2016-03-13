@@ -59,11 +59,7 @@ inoremap [<CR> []<LEFT>
 inoremap (<CR> ()<LEFT>
 inoremap "<CR> ""<LEFT>
 inoremap '<CR> ''<LEFT>
-inoremap <C-j> <DOWN>
-inoremap <C-k> <Up>
 inoremap <C-f> <Right>
-inoremap <C-b> <Left>
-inoremap <C-a> <Home>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 nnoremap Y y$
