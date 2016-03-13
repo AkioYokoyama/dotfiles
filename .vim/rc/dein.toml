@@ -38,3 +38,6 @@ repo = 'joonty/vdebug'
 
 [[plugins]]
 repo = 'osyo-manga/shabadou.vim'
+
+[[plugins]]
+repo = 'kana/vim-submode'
