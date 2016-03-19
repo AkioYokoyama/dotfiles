@@ -30,6 +30,7 @@ set noswapfile
 set noundofile
 set backspace=indent,eol,start
 set pastetoggle=<C-]>
+set wildmenu
 " }}}
 
 " colorscheme {{{
