@@ -186,11 +186,14 @@ call submode#map('winsize', 'n', '', '-', '<C-w>+')
 nnoremap <silent> <LEADER>+ :call BooleanToggle()<CR>
 function! BooleanToggle()
   let l:word = expand("<cword>")
-  if l:word == 'true'
-    s/true/false/g
-  elseif l:word == 'false'
-    s/false/true/g
+  let l:bool = {'true': 'false', 'false': 'true'}
+  let l:tmp = @a
+  if has_key(l:bool, l:word)
+    let @a = l:bool[l:word]
+    execute 'normal "_diw'
+    execute 'normal "aP'
   endif
+  let @a = l:tmp
 endfunction
 " }}}
 
