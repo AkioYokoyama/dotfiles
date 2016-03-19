@@ -114,25 +114,6 @@ syntax on
 let g:indentLine_faster = 1
 " }}}
 
-" unite {{{
-let g:unite_source_history_yank_enable =1
-let g:unite_source_file_mru_limit = 200
-nnoremap <silent> <space>y :<C-u>Unite history/yank<CR>
-nnoremap <silent> <space>b :<C-u>Unite buffer<CR>
-nnoremap <silent> <space>f :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> <space>fb :<C-u>Unite file buffer<CR>
-nnoremap <silent> <space>r :<C-u>Unite -buffer-name=register register<CR>
-nnoremap <silent> <space>u :<C-u>Unite file_mru buffer<CR>
-nnoremap <silent> <space>g :<C-u>Unite grep: -buffer-name=search-buffer<CR>
-
-" @see http://tkengo.github.io/blog/2015/10/19/release-highway/
-if executable('hw')
-  let g:unite_source_grep_command = 'hw'
-  let g:unite_source_grep_default_opts = '--no-group --no-color'
-  let g:unite_source_grep_recursive_opt = ''
-endif
-" }}}
-
 " quickrun {{{
 let g:quickrun_config = {
 \  'watchdogs_checker/_': {

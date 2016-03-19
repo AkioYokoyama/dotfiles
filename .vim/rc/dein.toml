@@ -21,13 +21,7 @@ repo = 'tpope/vim-fugitive'
 repo = 'AkioYokoyama/vim-surround'
 
 [[plugins]]
-repo = 'haya14busa/vim-easymotion'
-
-[[plugins]]
 repo = 'Yggdroot/indentLine'
-
-[[plugins]]
-repo = 'Shougo/unite.vim'
 
 [[plugins]]
 repo = 'vim-scripts/smarty-syntax'
