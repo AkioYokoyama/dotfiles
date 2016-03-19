@@ -41,16 +41,13 @@ colorscheme hybrid
 " autocmd init {{{
 augroup MyAutoCmd
   autocmd!
+  autocmd BufEnter * setlocal formatoptions-=r
+  autocmd BufEnter * setlocal formatoptions-=o
+  autocmd InsertLeave * set nopaste
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+  autocmd BufNewFile,BufRead *.html set filetype=smarty
 augroup End
-" }}}
-
-" autocmd {{{
-autocmd BufEnter * setlocal formatoptions-=r
-autocmd BufEnter * setlocal formatoptions-=o
-autocmd InsertLeave * set nopaste
-autocmd WinLeave * set nocursorline
-autocmd WinEnter,BufRead * set cursorline
-autocmd BufNewFile,BufRead *.html set filetype=smarty
 " }}}
 
 " mapping {{{
