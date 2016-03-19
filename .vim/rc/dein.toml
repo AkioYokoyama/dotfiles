@@ -41,3 +41,6 @@ repo = 'osyo-manga/shabadou.vim'
 
 [[plugins]]
 repo = 'kana/vim-submode'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
