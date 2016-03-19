@@ -203,5 +203,17 @@ call submode#map('winsize', 'n', '', '+', '<C-w>-')
 call submode#map('winsize', 'n', '', '-', '<C-w>+')
 " }}}
 
+" BooleanToggle {{{
+nnoremap <silent> <LEADER>+ :call BooleanToggle()<CR>
+function! BooleanToggle()
+  let l:word = expand("<cword>")
+  if l:word == 'true'
+    s/true/false/g
+  elseif l:word == 'false'
+    s/false/true/g
+  endif
+endfunction
+" }}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3
