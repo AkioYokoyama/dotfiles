@@ -187,13 +187,13 @@ nnoremap <silent> <LEADER>+ :call BooleanToggle()<CR>
 function! BooleanToggle()
   let l:word = expand("<cword>")
   let l:bool = {'true': 'false', 'false': 'true'}
-  let l:tmp = @a
   if has_key(l:bool, l:word)
+    let l:tmp = @a
     let @a = l:bool[l:word]
     execute 'normal "_diw'
     execute 'normal "aP'
+    let @a = l:tmp
   endif
-  let @a = l:tmp
 endfunction
 " }}}
 
