@@ -38,7 +38,7 @@ set background=dark
 colorscheme hybrid
 " }}}
 
-" autocmd init {{{
+" autocmd {{{
 augroup MyAutoCmd
   autocmd!
   autocmd BufEnter * setlocal formatoptions-=r
@@ -58,6 +58,7 @@ inoremap (<CR> ()<LEFT>
 inoremap "<CR> ""<LEFT>
 inoremap '<CR> ''<LEFT>
 inoremap <C-f> <Right>
+inoremap <C-b> <Left>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 nnoremap Y y$
