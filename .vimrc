@@ -198,5 +198,21 @@ function! BooleanToggle()
 endfunction
 " }}}
 
+" ctrlP{{{
+if executable('ag')
+  let g:ctrlp_use_caching=0
+  let g:ctrlp_user_command='ag %s -i --nocolor --nogroup -g ""'
+endif
+" }}}
+
+" vim-over{{{
+" 全体置換
+nnoremap <silent> <Leader>r :OverCommandLine<CR>%s//g<Left><Left>
+" 選択範囲置換
+vnoremap <silent> <Leader>r :OverCommandLine<CR>s//g<Left><Left>
+" カーソルしたの単語置換
+nnoremap sub :OverCommandLine<CR>%s/<C-r><C-w>//g<Left><Left>
+"}}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3

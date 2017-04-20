@@ -38,3 +38,9 @@ repo = 'kana/vim-submode'
 
 [[plugins]]
 repo = 'ctrlpvim/ctrlp.vim'
+
+[[plugins]]
+repo = 'rking/ag.vim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-over'
