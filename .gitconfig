@@ -1,5 +1,6 @@
 [user]
-    email=""
+	email = a-yokoyama@stylagy.co.jp
+	name = Yokoyama Akio
 [core]
     editor = vim
 [color]

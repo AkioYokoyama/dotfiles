@@ -1,5 +1,4 @@
 # viモードの設定
-set editing-mode vi
 $if mode=vi
   "\C-a":beginning-of-line
   "\C-b":backward-char

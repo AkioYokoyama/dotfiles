@@ -6,14 +6,17 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # User specific aliases and functions
-source $HOME/.aliases
+source ~/.local_aliases
+
+# git Tab補完
+source /usr/local/bin/git-completion.bash
 
 # readline setting
-bind -f $HOME/.inputrc
-bind -f $HOME/.editrc
+# bind -f $HOME/.inputrc
+# bind -f $HOME/.editrc
 
-bind '"b":self-insert'
-bind '"m":self-insert'
+# bind '"b":self-insert'
+# bind '"m":self-insert'
 
 shopt -s autocd
 shopt -s cdspell
