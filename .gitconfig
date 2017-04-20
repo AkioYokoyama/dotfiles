@@ -11,6 +11,7 @@
     cm    = checkout master
     co    = commit
     di    = diff
+    predi = diff HEAD^ HEAD
     din   = diff --name-only
     diw   = diff --color-words
     f     = fetch
