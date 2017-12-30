@@ -3,5 +3,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~"
+alias ggn="git grep -n "
 
 alias l="ls -lA"
