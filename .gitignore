@@ -1,0 +1,6 @@
+# vimのプラグイン
+.vim/pack/dist/start/*
+.vim/pack/dist/opt/*
+
+!.vim/pack/dist/start/.gitkeep
+!.vim/pack/dist/opt/.gitkeep
