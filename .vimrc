@@ -78,39 +78,6 @@ set statusline+=%=%{fugitive#statusline()}
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
-" dein plugin {{{
-let s:dein_dir = expand('~/.cache/dein')
-let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
-
-if &runtimepath !~# '/dein.vim'
-  if !isdirectory(s:dein_repo_dir)
-    execute '!git clone https://github.com/Shougo/dein.vim' s:dein_repo_dir
-  endif
-  execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
-endif
-
-" plugin setting {{{
-call dein#begin(s:dein_dir)
-  let s:toml      = '~/.vim/rc/dein.toml'
-  let s:lazy_toml = '~/.vim/rc/dein_lazy.toml'
-
-  if dein#load_cache([expand('<sfile>'), s:toml, s:lazy_toml])
-    call dein#load_toml(s:toml,      {'lazy': 0})
-    call dein#load_toml(s:lazy_toml, {'lazy': 1})
-    call dein#save_cache()
-  endif
-call dein#end()
-" }}}
-
-if dein#check_install()
-  call dein#install()
-endif
-
-filetype plugin on
-filetype indent on
-syntax on
-" }}}
-
 " indentLine {{{
 let g:indentLine_faster = 1
 " }}}
@@ -131,18 +98,6 @@ let g:quickrun_config = {
 \  },
 \}
 "}}}
-
-" vim-watchdogs {{{
-if dein#tap('vim-watchdogs')
-  function! s:watchdogs_on_source() abort
-    let g:watchdogs_check_BufWritePost_enable  = 1
-    let g:watchdogs_check_CursorHold_enable    = 1
-  endfunction
-
-  execute 'autocmd MyAutoCmd User' 'dein#source#vim-watchdogs'
-    \ 'call s:watchdogs_on_source()'
-endif
-" }}}
 
 " vdebug {{{
 let g:vdebug_keymap = {
