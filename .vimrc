@@ -75,6 +75,7 @@ nnoremap <silent> <LEADER>$D :%s/ *$//g<CR>
 nnoremap <silent> <LEADER>hs :HoppingStart<CR>
 nnoremap <silent> <LEADER>> :Vex ~<CR>
 nnoremap <silent> <LEADER>< <C-w>t:close<CR>
+vmap <silent> <CR> <Plug>(EasyAlign)
 " }}}
 
 " StatusLine {{{
