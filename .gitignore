@@ -4,3 +4,4 @@
 
 !.vim/pack/dist/start/.gitkeep
 !.vim/pack/dist/opt/.gitkeep
+!.vim/pack/dist/start/plug-list.md
