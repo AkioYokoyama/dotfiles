@@ -100,6 +100,22 @@ let g:quickrun_config = {
 \}
 "}}}
 
+" ale {{{
+" 保存時のみ実行
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
+" ファイルオープン時にチェックしない
+let g:ale_lint_on_enter = 0
+" 表示設定
+let g:ale_sign_error = 'x'
+let g:ale_sign_warning = '<<'
+let g:ale_linters = {'php': ['php']}
+
+let g:ale_php_phpcs_standard = 'PSR2'
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
+" }}}
+
 " vdebug {{{
 let g:vdebug_keymap = {
 \  "run"               : "<LEADER>vr",
