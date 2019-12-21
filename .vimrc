@@ -73,6 +73,8 @@ nnoremap <silent> <LEADER><F12> :tabnew $MYVIMRC<CR>
 nnoremap <silent> <LEADER>t :tabnew<CR>
 nnoremap <silent> <LEADER>$D :%s/ *$//g<CR>
 nnoremap <silent> <LEADER>hs :HoppingStart<CR>
+nnoremap <silent> <LEADER>> :Vex ~<CR>
+nnoremap <silent> <LEADER>< <C-w>t:close<CR>
 " }}}
 
 " StatusLine {{{
