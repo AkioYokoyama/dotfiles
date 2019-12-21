@@ -144,6 +144,12 @@ function! BooleanToggle()
 endfunction
 " }}}
 
+" netrw {{{
+let g:netrw_mt = "~"
+let g:netrw_liststyle=3
+let g:netrw_winsize=20
+" }}}
+
 au BufNewFile,BufRead *.php set tags+=$HOME/php.tags
 " vim:set foldmethod=marker:
 " vim:set column=3
