@@ -36,6 +36,7 @@ set wildmenu
 " colorscheme {{{
 set background=dark
 colorscheme hybrid
+syntax on
 " }}}
 
 " autocmd {{{
