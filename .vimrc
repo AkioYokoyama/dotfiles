@@ -31,6 +31,7 @@ set noundofile
 set backspace=indent,eol,start
 set pastetoggle=<C-]>
 set wildmenu
+set clipboard=unnamed
 " }}}
 
 " colorscheme {{{
@@ -47,7 +48,6 @@ augroup MyAutoCmd
   autocmd InsertLeave * set nopaste
   autocmd WinLeave * set nocursorline
   autocmd WinEnter,BufRead * set cursorline
-  autocmd BufNewFile,BufRead *.html set filetype=smarty
 augroup End
 " }}}
 
@@ -169,9 +169,14 @@ endfunction
 " }}}
 
 " netrw {{{
-let g:netrw_mt = "~"
 let g:netrw_liststyle=3
 let g:netrw_winsize=20
+" }}}
+
+" far {{{
+let g:far#source='rg'
+"let g:far#cwd=''
+let g:far#collapse_result=1
 " }}}
 
 au BufNewFile,BufRead *.php set tags+=$HOME/php.tags
