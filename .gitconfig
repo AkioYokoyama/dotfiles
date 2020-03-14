@@ -22,3 +22,5 @@
     lo5   = log --oneline -5
     lo10  = log --oneline -10
     st    = status
+[fetch]
+	prune = true
