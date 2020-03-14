@@ -179,6 +179,10 @@ let g:far#source='rg'
 let g:far#collapse_result=1
 " }}}
 
+" blamer {{{
+let g:blamer_date_format = '%y/%m/%d %H:%M'
+" }}}
+
 au BufNewFile,BufRead *.php set tags+=$HOME/php.tags
 " vim:set foldmethod=marker:
 " vim:set column=3
