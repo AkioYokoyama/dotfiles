@@ -7,3 +7,5 @@ alias ggn="git grep -n "
 alias ggni="git grep -n -i "
 
 alias l="ls -lA"
+alias ls="ls -FG"
+alias ll="ls -alFG"
