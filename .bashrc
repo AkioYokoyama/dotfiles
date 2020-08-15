@@ -17,3 +17,7 @@ shopt -s cdspell
 shopt -s dirspell
 shopt -s cmdhist
 shopt -s no_empty_cmd_completion
+
+# PS1
+source ~/.git-prompt.sh
+export PS1='[\W]\[\e[1;32m\]$(__git_ps1 "(%s)")\[\e[m\]\$ '
