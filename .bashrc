@@ -12,13 +12,6 @@ source ~/.aliases
 # git Tab補完
 source /usr/local/bin/git-completion.bash
 
-# readline setting
-# bind -f $HOME/.inputrc
-# bind -f $HOME/.editrc
-
-# bind '"b":self-insert'
-# bind '"m":self-insert'
-
 shopt -s autocd
 shopt -s cdspell
 shopt -s dirspell
