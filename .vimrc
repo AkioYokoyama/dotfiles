@@ -186,7 +186,7 @@ let g:blamer_date_format = '%y/%m/%d %H:%M'
 " sonictemplate {{{
 "let g:sonictemplate_vim_template_dir = expand('~/.vim/sonictemplate')
 let g:sonictemplate_vim_template_dir = [
-\   '$HOME/.vim/postfix-php-template'
+\   '$HOME/.vim/postfix-template'
 \]
 " }}}
 
