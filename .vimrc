@@ -68,7 +68,7 @@ nnoremap gr gT
 nnoremap <C-l> 10l
 nnoremap <C-h> 10h
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
-nnoremap <silent> <space><space> :<C-u>tab stj <C-R>=expand('<cword>')<CR><CR>zz
+nnoremap <silent> <space><space> :AnyJump<CR>
 nnoremap <silent> <LEADER><F12> :tabnew $MYVIMRC<CR>
 nnoremap <silent> <LEADER>t :tabnew<CR>
 nnoremap <silent> <LEADER>$D :%s/ *$//g<CR>
@@ -183,6 +183,24 @@ let g:far#collapse_result=1
 let g:blamer_date_format = '%y/%m/%d %H:%M'
 " }}}
 
-au BufNewFile,BufRead *.php set tags+=$HOME/php.tags
+" sonictemplate {{{
+"let g:sonictemplate_vim_template_dir = expand('~/.vim/sonictemplate')
+let g:sonictemplate_vim_template_dir = [
+\   '$HOME/.vim/postfix-php-template'
+\]
+" }}}
+
+" dadbod {{{
+let $DBUI_URL = ''
+let g:db_ui_table_helpers = {
+\   'mysql': {
+\     'Desc': 'DESC {table}',
+\     'Create Table': 'SHOW CREATE TABLE {table}',
+\     'Comment': 'SHOW FULL COLUMNS FROM {table}',
+\     'Count': 'SELECT COUNT(*) FROM {table}'
+\   }
+\ }
+" }}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3
