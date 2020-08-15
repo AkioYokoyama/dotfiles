@@ -1,6 +1,6 @@
 [user]
-	email = a-yokoyama@stylagy.co.jp
-	name = Yokoyama Akio
+	email =
+	name =
 [core]
     editor = vim
 [color]
@@ -8,7 +8,6 @@
 [alias]
     a     = add
     b     = branch
-    co    = checkout
     cm    = commit
     cmm   = commit -m
     di    = diff
