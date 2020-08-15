@@ -83,7 +83,6 @@ nnoremap <silent> <LEADER>b :Clap blines<CR>
 " StatusLine {{{
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
-set statusline+=%=%{fugitive#statusline()}
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
