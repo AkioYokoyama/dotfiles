@@ -190,8 +190,10 @@ let g:sonictemplate_vim_template_dir = [
 " }}}
 
 " dadbod {{{
-let $DBUI_URL = ''
-let g:db_ui_table_helpers = {
+if filereadable(expand('~/.vim/dadbod-ui/.setting'))
+    source ~/.vim/dadbod-ui/.setting
+    let $DBUI_URL = db . '://' . user . ':' . password . '@' . host . ':' . port . '/' . db
+    let g:db_ui_table_helpers = {
 \   'mysql': {
 \     'Desc': 'DESC {table}',
 \     'Create Table': 'SHOW CREATE TABLE {table}',
@@ -199,6 +201,10 @@ let g:db_ui_table_helpers = {
 \     'Count': 'SELECT COUNT(*) FROM {table}'
 \   }
 \ }
+    nnoremap <silent> <LEADER>db :DBUI<CR>
+else
+    echo 'There is no .setting file.'
+endif
 " }}}
 
 " vim:set foldmethod=marker:
