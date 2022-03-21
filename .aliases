@@ -6,7 +6,3 @@ alias ll="ls -alFG"
 # git
 alias ggn="git grep -n "
 alias ggni="git grep -n -i "
-
-# docker
-alias up="docker-compose up -d"
-alias down="docker-compose down"
