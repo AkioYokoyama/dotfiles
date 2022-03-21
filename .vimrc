@@ -40,6 +40,9 @@ colorscheme hybrid
 syntax on
 " }}}
 
+" filetypeによって設定を変える
+filetype plugin indent on
+
 " autocmd {{{
 augroup MyAutoCmd
   autocmd!
@@ -192,7 +195,7 @@ let g:sonictemplate_vim_template_dir = [
 " dadbod {{{
 if filereadable(expand('~/.vim/dadbod-ui/.setting'))
     source ~/.vim/dadbod-ui/.setting
-    let $DBUI_URL = db . '://' . user . ':' . password . '@' . host . ':' . port . '/' . db
+    let $DBUI_URL = db . '://' . user . ':' . password . '@' . host . ':' . port . '/' . dbname
     let g:db_ui_table_helpers = {
 \   'mysql': {
 \     'Desc': 'DESC {table}',

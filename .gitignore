@@ -5,3 +5,11 @@
 !.vim/pack/dist/start/.gitkeep
 !.vim/pack/dist/opt/.gitkeep
 !.vim/pack/dist/start/vplug.sh
+
+.vim/colors/*
+.vim/postfix-template/*
+.vim/.netrwhist
+.vim/dadbod-ui/
+!.vim/dadbod-ui/.gitkeep
+
+.DS_Store
