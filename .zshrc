@@ -47,3 +47,7 @@ zstyle ':vcs_info:*' formats "%F{green}%c%u(%b)%f"
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
 PROMPT='[%c]'\$vcs_info_msg_0_'$ '
 precmd(){ vcs_info }
+
+if [ -e ~/.zshrc_local ]; then
+  source ~/.zshrc_local
+fi
