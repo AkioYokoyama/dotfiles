@@ -40,6 +40,9 @@ colorscheme hybrid
 syntax on
 " }}}
 
+" filetypeによって設定を変える
+filetype plugin indent on
+
 " autocmd {{{
 augroup MyAutoCmd
   autocmd!
