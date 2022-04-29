@@ -9,4 +9,5 @@ augroup filetypedetect
   autocmd BufRead,BufNewfile *.vim setfiletype vim
   autocmd BufRead,BufNewFile *.rb setfiletype ruby
   autocmd BufRead,BufNewFile *.erb setfiletype ruby
+  autocmd BufRead,BufNewFile *.js setfiletype javascript
 augroup END
