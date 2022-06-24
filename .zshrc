@@ -30,8 +30,6 @@ linux*)
 esac
 
 # git補完
-zstyle ':completion:*:*:git:*' script /usr/local/etc/bash_completion.d/git-completion.bash
-
 # FPATHに`~/.zsh/completion`を追加
 fpath=(~/.zsh/completion $fpath)
 # シェル関数`compinit`の自動読み込み
