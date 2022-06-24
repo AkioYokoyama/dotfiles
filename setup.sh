@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# setup git completion
+bash $HOME/dotfiles/setup/git.sh
+
 # symbolic link
 ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
 ln -sf $HOME/dotfiles/.vim $HOME/.vim
