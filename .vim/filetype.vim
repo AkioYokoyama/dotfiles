@@ -8,7 +8,6 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.yml setfiletype yaml
   autocmd BufRead,BufNewfile *.vim setfiletype vim
   autocmd BufRead,BufNewFile *.rb setfiletype ruby
-  autocmd BufRead,BufNewFile *.erb setfiletype ruby
   autocmd BufRead,BufNewFile *.js setfiletype javascript
   autocmd BufRead,BufNewFile *.ts setfiletype javascript
   autocmd BufRead,BufNewFile *.tsx setfiletype javascript
