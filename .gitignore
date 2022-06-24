@@ -4,7 +4,8 @@
 
 !.vim/pack/dist/start/.gitkeep
 !.vim/pack/dist/opt/.gitkeep
-!.vim/pack/dist/start/vplug.sh
+!.vim/pack/dist/start/vplug-update.sh
+!.vim/pack/dist/start/vplug-init.sh
 
 .vim/colors/*
 .vim/postfix-template/*
