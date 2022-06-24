@@ -1,0 +1,15 @@
+doc$
+	/**
+	 * {{_cursor_}}
+	 */
+
+\(\S\+\)\.log$
+	console.{{$1}}({{_cursor_}})
+
+func\.\(\S\+\)$
+	function {{$1}}() {
+	}
+
+func\.\(\S\+\)\.props$
+	function {{$1}}(props) {
+	}
