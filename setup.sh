@@ -1,10 +1,13 @@
 #!/bin/bash
 
+# setup git completion
+bash $HOME/dotfiles/setup/git.sh
+
 # symbolic link
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.vim ~/.vim
-ln -sf ~/dotfiles/.vimrc ~/.vimrc
+ln -sf $HOME/dotfiles/.zshrc $HOME/.zshrc
+ln -sf $HOME/dotfiles/.vim $HOME/.vim
+ln -sf $HOME/dotfiles/.vimrc $HOME/.vimrc
 
 # make file
-touch ~/.local_aliases
-cp ~/dotfiles/.gitconfig ~/
+touch $HOME/.local_aliases
+cp $HOME/dotfiles/.gitconfig $HOME/
