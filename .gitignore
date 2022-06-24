@@ -12,5 +12,6 @@
 .vim/.netrwhist
 .vim/dadbod-ui/
 !.vim/dadbod-ui/.gitkeep
+!.vim/colors/colorschema.sh
 
 .DS_Store
