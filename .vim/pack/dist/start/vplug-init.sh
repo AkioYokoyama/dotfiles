@@ -17,6 +17,9 @@ git clone https://github.com/APZelos/blamer.nvim.git
 git clone https://github.com/brooth/far.vim.git
 git clone https://github.com/pechorin/any-jump.vim.git
 
+# language
+git clone https://github.com/leafgarland/typescript-vim.git
+
 # individual support
 # coc
 #    - https://qiita.com/Yoika/items/efbbcfe5e609d70319a2
