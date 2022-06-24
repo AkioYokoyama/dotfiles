@@ -1,0 +1,18 @@
+^-$
+	- [ ] {{_cursor_}}
+^li$
+	- [ ] {{_cursor_}}
+^-x$
+	- [x] {{_cursor_}}
+\(\S\+\)\.()$
+	[{{$1}}]({{_cursor_}})
+|\.\(\S\+\)$
+	| {{_cursor_}} |      |
+	| {{$1}} | {{$1}} |
+	|   |   |
+	|   |   |
+	|   |   |
+^fold$
+	<details>
+	<summary>{{_cursor_}}</summary>
+	</details>

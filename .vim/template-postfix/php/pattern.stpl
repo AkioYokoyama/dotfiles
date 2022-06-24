@@ -1,0 +1,78 @@
+de$
+	echo '<pre>';var_dump("{{_cursor_}}");echo '</pre>';
+doc$
+	/**
+	 * {{_cursor_}}
+	 */
+\(\S\+\)\.func\.\(\S\+\)$
+	/**
+	 * {{_cursor_}}
+	 */
+	{{$1}} function {{$2}}()
+	{
+	}
+\(\S\+\)\.func\.\(\S\+\)\.\(\S\+\)$
+	/**
+	 * {{_cursor_}}
+	 *
+	 * @return {{$3}}
+	 */
+	{{$1}} function {{$2}}(): {{$3}}
+	{
+	}
+
+\(\S\+\)\.log$
+	Yii::{{$1}}({{_cursor_}});
+varq$
+	var_dump($query->createCommand()->getRawSql());
+\(\S\+\)\.dp$
+	/**
+	 * test data for test{{$1}}
+	 */
+	public function {{$1}}DataProvider()
+	{
+		{{_cursor_}}
+	}
+test\.\(\S\+\)$
+	/**
+	 * @cover {{_cursor_}}::{{$1}}
+	 * @author akio.yokoyama
+	 * @group 
+	 * @small
+	 */
+	public function test{{$1}}()
+	{
+	}
+testdp\.\(\S\+\)$
+	/**
+	 * @cover {{_cursor_}}::{{$1}}
+	 * @dataProvider {{$1}}DataProvider
+	 * @author akio.yokoyama
+	 * @group 
+	 * @small
+	 */
+	public function test{{$1}}($expected, array $testData)
+	{
+	}
+yie$
+	yield '' => [
+		'expected' => ,
+		'testData' => [
+			'' => ,
+		]
+	];
+ase$
+	$this->assertEquals($expected, $result);
+\(\S\+\)\.stub$
+	Stub::make(new {{$1}}, ['{{_cursor_}}' => ]);
+\(\S\+\)\.mock$
+	test::double({{$1}}::class, [
+		'{{_cursor_}}' => 
+	]);
+\(\S\+\)\.have$
+	$this->tester->haveRecord(
+		{{$1}}::class,
+		[
+			'{{_cursor_}}' => ,
+		]
+	);
