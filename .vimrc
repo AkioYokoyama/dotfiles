@@ -192,9 +192,8 @@ let g:sonictemplate_vim_template_dir = [
 " }}}
 
 " dadbod {{{
-if filereadable(expand('~/.vim/dadbod-ui/.setting'))
-    source ~/.vim/dadbod-ui/.setting
-    let $DBUI_URL = db . '://' . user . ':' . password . '@' . host . ':' . port . '/' . dbname
+if filereadable(expand('~/.vim/dadbod-ui/connections.json'))
+    let g:db_ui_save_location = '~/.vim/dadbod-ui'
     let g:db_ui_table_helpers = {
 \   'mysql': {
 \     'Desc': 'DESC {table}',
@@ -205,7 +204,7 @@ if filereadable(expand('~/.vim/dadbod-ui/.setting'))
 \ }
     nnoremap <silent> <LEADER>db :DBUI<CR>
 else
-    echo 'There is no .setting file.'
+    echo 'There is no connections.json.'
 endif
 " }}}
 
