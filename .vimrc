@@ -203,8 +203,6 @@ if filereadable(expand('~/.vim/dadbod-ui/connections.json'))
 \   }
 \ }
     nnoremap <silent> <LEADER>db :DBUI<CR>
-else
-    echo 'There is no connections.json.'
 endif
 " }}}
 
