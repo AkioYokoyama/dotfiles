@@ -7,6 +7,9 @@ alias ll="ls -alFG"
 alias ggn="git grep -n "
 alias ggni="git grep -n -i "
 
+# shortcut
+alias memo="ruby $HOME/tools/shortcut/memo.rb"
+
 # move
 alias vplug="cd $HOME/.vim/pack/dist/start"
 
