@@ -4,7 +4,7 @@ doc$
 	 */
 
 \(\S\+\)\.log$
-	console.{{$1}}({{_cursor_}})
+	console.{{$1}}({{_cursor_}}); // eslint-disable-line no-console
 
 func\.\(\S\+\)$
 	function {{$1}}() {
