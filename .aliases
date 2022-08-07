@@ -6,6 +6,7 @@ alias ll="ls -alFG"
 # git
 alias ggn="git grep -n "
 alias ggni="git grep -n -i "
+alias tmp="git add . && git commit -m 'tmp commit'"
 
 # shortcut
 alias memo="ruby $HOME/tools/shortcut/memo.rb"
