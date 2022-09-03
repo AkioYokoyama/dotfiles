@@ -1,0 +1,10 @@
+doc$
+	/*
+	 * {{_cursor_}}
+	 */
+pp$
+	println!("{{_cursor_}}");
+fn\.\(\S\+\)$
+	fn {{$1}}() {
+		{{_cursor_}}
+	}
