@@ -9,8 +9,8 @@ def\.\(\S\+\)$
 \(\S\+\)\.log$
 	Rails.logger.{{$1}} {{_cursor_}}
 
-\(\S\+\)\.l$
-	logger.{{$1}} {{_cursor_}}
+\(\S\+\)\.logb$
+	Rails.logger.{{$1}} '<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'
 
 \(\S\+\)\.frozen$
 	# frozen_string_literal: {{$1}}
