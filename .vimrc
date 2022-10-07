@@ -203,7 +203,7 @@ if filereadable(expand('~/.vim/dadbod-ui/connections.json'))
 \     'Count': 'SELECT COUNT(*) FROM {table}'
 \   }
 \ }
-    nnoremap <silent> <LEADER>db :DBUI<CR>
+    nnoremap <silent> <LEADER>db :tab DBUI<CR>
 endif
 " }}}
 
