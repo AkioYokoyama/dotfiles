@@ -13,4 +13,5 @@ augroup filetypedetect
   autocmd BufRead,BufNewFile *.tsx setfiletype javascript
   autocmd BufRead,BufNewFile *.css setfiletype css
   autocmd BufRead,BufNewFile *.scss setfiletype scss
+  autocmd BufRead,BufNewFile *.mdx setfiletype markdown
 augroup END
