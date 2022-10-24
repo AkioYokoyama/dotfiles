@@ -16,3 +16,8 @@
 	<details>
 	<summary>{{_cursor_}}</summary>
 	</details>
+^fm$
+	---
+	sidebar_position: 1
+	title: {{_cursor_}}
+	---
