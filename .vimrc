@@ -207,5 +207,9 @@ if filereadable(expand('~/.vim/dadbod-ui/connections.json'))
 endif
 " }}}
 
+" coc language server {{{
+let g:coc_filetype_map = {'tsx': 'typescriptreact'}
+" }}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3
