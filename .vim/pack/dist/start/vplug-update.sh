@@ -18,7 +18,7 @@ git pull origin master
 cd ../vim-easy-align/
 git pull origin master
 
-cd ../vim-easy-align/
+cd ../vim-indent-guides/
 git pull origin master
 
 cd ../vim-illuminate/
