@@ -8,6 +8,7 @@ git clone https://github.com/RRethy/vim-illuminate.git
 git clone https://github.com/dense-analysis/ale.git
 git clone https://github.com/iamcco/markdown-preview.nvim.git
 git clone https://github.com/AkioYokoyama/vim-surround.git
+git clone https://github.com/dkarter/bullets.vim.git
 
 # want
 git clone https://github.com/tpope/vim-dadbod.git

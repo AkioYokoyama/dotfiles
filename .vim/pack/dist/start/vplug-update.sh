@@ -32,3 +32,6 @@ git pull origin master
 
 cd ../vim-surround/
 git pull origin master
+
+cd ../bullets.vim/
+git pull origin master
