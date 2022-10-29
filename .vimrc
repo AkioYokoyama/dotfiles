@@ -209,6 +209,7 @@ let g:coc_filetype_map = {'tsx': 'typescriptreact'}
 
 " indent-guides {{{
 " guibg: haruka.vim / ctermbg: hybrid.vim
+let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f5ffff ctermbg=234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f5f8fd ctermbg=235
