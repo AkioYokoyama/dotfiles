@@ -9,9 +9,6 @@ git pull origin master
 cd ../blamer.nvim
 git pull origin master
 
-cd ../indentLine/
-git pull origin master
-
 cd ../vim-dadbod/
 git pull origin master
 

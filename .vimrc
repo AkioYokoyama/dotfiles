@@ -90,10 +90,6 @@ set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
-" indentLine {{{
-let g:indentLine_faster = 1
-" }}}
-
 " quickrun {{{
 let g:quickrun_config = {
 \  'watchdogs_checker/_': {
