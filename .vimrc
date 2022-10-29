@@ -90,10 +90,6 @@ set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
-" indentLine {{{
-let g:indentLine_faster = 1
-" }}}
-
 " quickrun {{{
 let g:quickrun_config = {
 \  'watchdogs_checker/_': {
@@ -209,6 +205,13 @@ endif
 
 " coc language server {{{
 let g:coc_filetype_map = {'tsx': 'typescriptreact'}
+" }}}
+
+" indent-guides {{{
+" guibg: haruka.vim / ctermbg: hybrid.vim
+let g:indent_guides_auto_colors = 0
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f5ffff ctermbg=234
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f5f8fd ctermbg=235
 " }}}
 
 " vim:set foldmethod=marker:

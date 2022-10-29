@@ -1,7 +1,7 @@
 #!/bin/bash
 # must
 git clone https://github.com/thinca/vim-quickrun.git
-git clone https://github.com/Yggdroot/indentLine.git
+git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/mattn/vim-sonictemplate.git
 git clone https://github.com/liuchengxu/vim-clap.git
 git clone https://github.com/RRethy/vim-illuminate.git
