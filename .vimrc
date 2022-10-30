@@ -90,23 +90,6 @@ set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
 " }}}
 
-" quickrun {{{
-let g:quickrun_config = {
-\  'watchdogs_checker/_': {
-\    'hook/close_quickfix/enable_exit': 1,
-\    'hook/back_window/enable_exit':    0,
-\    'hook/back_window/priority_exit':  1,
-\    'outputter/quickfix/open_cmd':     ''
-\  },
-\  'watchdogs_checker/php': {
-\    'command': 'php',
-\    'cmdopt':  '-l -d error_reporting=E_ALL -d display_errors=1 -d display_startup_errors=1 -d log_errors=0 -d xdebug.cli_color=0',
-\    'exec':    '%c %o %s:p',
-\    'errorformat': '%m\ in\ %f\ on\ line\ %l'
-\  },
-\}
-"}}}
-
 " ale {{{
 " 保存時のみ実行
 let g:ale_lint_on_save = 1
