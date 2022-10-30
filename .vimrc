@@ -152,21 +152,6 @@ let g:vdebug_options= {
 \}
 " }}}
 
-" BooleanToggle {{{
-nnoremap <silent> <LEADER>+ :call BooleanToggle()<CR>
-function! BooleanToggle()
-  let l:word = expand("<cword>")
-  let l:bool = {'true': 'false', 'false': 'true'}
-  if has_key(l:bool, l:word)
-    let l:tmp = @a
-    let @a = l:bool[l:word]
-    execute 'normal "_diw'
-    execute 'normal "aP'
-    let @a = l:tmp
-  endif
-endfunction
-" }}}
-
 " netrw {{{
 let g:netrw_liststyle=3
 let g:netrw_winsize=20
