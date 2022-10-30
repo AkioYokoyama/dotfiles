@@ -99,9 +99,7 @@ let g:ale_lint_on_enter = 0
 " 表示設定
 let g:ale_sign_error = 'x'
 let g:ale_sign_warning = '<<'
-let g:ale_linters = {'php': ['php']}
 
-let g:ale_php_phpcs_standard = 'PSR2'
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
