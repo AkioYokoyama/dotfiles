@@ -24,9 +24,6 @@ git pull origin master
 cd ../vim-illuminate/
 git pull origin master
 
-cd ../vim-quickrun/
-git pull origin master
-
 cd ../vim-sonictemplate/
 git pull origin master
 
