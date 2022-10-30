@@ -1,12 +1,10 @@
 #!/bin/bash
 # must
-git clone https://github.com/thinca/vim-quickrun.git
 git clone https://github.com/nathanaelkane/vim-indent-guides.git
 git clone https://github.com/mattn/vim-sonictemplate.git
 git clone https://github.com/liuchengxu/vim-clap.git
 git clone https://github.com/RRethy/vim-illuminate.git
 git clone https://github.com/dense-analysis/ale.git
-git clone https://github.com/iamcco/markdown-preview.nvim.git
 git clone https://github.com/AkioYokoyama/vim-surround.git
 git clone https://github.com/dkarter/bullets.vim.git
 
