@@ -81,6 +81,7 @@ nnoremap <silent> <LEADER>< <C-w>t:close<CR>
 vmap <silent> <CR> <Plug>(EasyAlign)
 nnoremap <silent> <C-p> :Clap gfiles<CR>
 nnoremap <silent> <LEADER>b :Clap blines<CR>
+nnoremap <silent> <LEADER>y :Clap yanks<CR>
 nnoremap <c-@> <ESC>
 " }}}
 
@@ -150,6 +151,11 @@ let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f5ffff ctermbg=234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f5f8fd ctermbg=235
+" }}}
+
+" clap-vim {{{
+" hide preview window
+let g:clap_preview_direction = 'UD'
 " }}}
 
 " vim:set foldmethod=marker:
