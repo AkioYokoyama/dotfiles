@@ -152,5 +152,10 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=#f5ffff ctermbg=234
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=#f5f8fd ctermbg=235
 " }}}
 
+" clap-vim {{{
+" hide preview window
+let g:clap_preview_direction = 'UD'
+" }}}
+
 " vim:set foldmethod=marker:
 " vim:set column=3
