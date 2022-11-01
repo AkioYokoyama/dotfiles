@@ -81,6 +81,7 @@ nnoremap <silent> <LEADER>< <C-w>t:close<CR>
 vmap <silent> <CR> <Plug>(EasyAlign)
 nnoremap <silent> <C-p> :Clap gfiles<CR>
 nnoremap <silent> <LEADER>b :Clap blines<CR>
+nnoremap <silent> <LEADER>y :Clap yanks<CR>
 nnoremap <c-@> <ESC>
 " }}}
 
