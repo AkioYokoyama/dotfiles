@@ -13,6 +13,7 @@ alias memo="ruby $HOME/tools/shortcut/memo.rb"
 alias sound="afplay /System/Library/Sounds/Submarine.aiff"
 alias reload="source ~/.zshrc"
 alias lalias="vim ~/.local_aliases"
+alias vim="vim -p"
 
 # move
 alias vplug="cd $HOME/.vim/pack/dist/start"
