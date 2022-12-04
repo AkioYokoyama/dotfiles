@@ -13,3 +13,9 @@ func\.\(\S\+\)$
 func\.\(\S\+\)\.props$
 	function {{$1}}(props) {
 	}
+
+onClick$
+	e: React.MouseEvent<HTMLInputElement>
+
+onChange$
+	e: React.ChangeEvent<HTMLInputElement>
