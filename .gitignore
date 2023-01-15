@@ -1,17 +1,17 @@
 # vimのプラグイン
-.vim/pack/dist/start/*
-.vim/pack/dist/opt/*
+vim/pack/dist/start/*
+vim/pack/dist/opt/*
 
-!.vim/pack/dist/start/.gitkeep
-!.vim/pack/dist/opt/.gitkeep
-!.vim/pack/dist/start/vplug-update.sh
-!.vim/pack/dist/start/vplug-init.sh
+!vim/pack/dist/start/.gitkeep
+!vim/pack/dist/opt/.gitkeep
+!vim/pack/dist/start/vplug-update.sh
+!vim/pack/dist/start/vplug-init.sh
 
-.vim/colors/*
-.vim/postfix-template/*
-.vim/.netrwhist
-.vim/dadbod-ui/
-!.vim/dadbod-ui/.gitkeep
-!.vim/colors/colorschema.sh
+vim/colors/*
+vim/postfix-template/*
+vim/.netrwhist
+vim/dadbod-ui/
+!vim/dadbod-ui/.gitkeep
+!vim/colors/colorschema.sh
 
 .DS_Store
