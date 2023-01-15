@@ -9,9 +9,9 @@ alias ggni="git grep -n -i "
 alias tmp="git add . && git commit -m 'tmp commit'"
 
 # shortcut
-alias memo="$HOME/Public/workspace/Rust/note/target/release/note"
-alias brow="bash $HOME/tools/shortcut/rust_command/open_url.sh"
-alias pass="bash $HOME/tools/shortcut/rust_command/password_manager.sh"
+alias memo="$HOME/tools/shortcut/rust_command/note/target/release/note"
+alias brow="bash $HOME/tools/shortcut/wrapper_shell/open_url.sh"
+alias pass="bash $HOME/tools/shortcut/wrapper_shell/password_manager.sh"
 alias sound="afplay /System/Library/Sounds/Submarine.aiff"
 alias reload="source $HOME/.zshrc"
 alias lalias="vim $HOME/.local_aliases"
