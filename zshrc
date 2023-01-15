@@ -2,8 +2,8 @@
 export LANG=ja_JP.UTF-8
 
 # Aliases
-if [ -f $HOME/dotfiles/.aliases ]; then
-    source $HOME/dotfiles/.aliases
+if [ -f $HOME/dotfiles/aliases ]; then
+    source $HOME/dotfiles/aliases
 fi
 
 if [ -f $HOME/.local_aliases ]; then
