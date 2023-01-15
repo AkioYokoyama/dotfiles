@@ -1,8 +1,3 @@
-doc$
-	/**
-	 * {{_cursor_}}
-	 */
-
 \(\S\+\)\.log$
 	console.{{$1}}({{_cursor_}}); // eslint-disable-line no-console
 
