@@ -9,7 +9,7 @@ alias ggni="git grep -n -i "
 alias tmp="git add . && git commit -m 'tmp commit'"
 
 # shortcut
-alias memo="bash $HOME/tools/shortcut/rust_command/memo.sh"
+alias memo="$HOME/Public/workspace/Rust/note/target/release/note"
 alias brow="bash $HOME/tools/shortcut/rust_command/open_url.sh"
 alias pass="bash $HOME/tools/shortcut/rust_command/password_manager.sh"
 alias sound="afplay /System/Library/Sounds/Submarine.aiff"
