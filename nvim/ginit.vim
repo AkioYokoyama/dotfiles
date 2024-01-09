@@ -7,3 +7,8 @@
 " colorscheme haruka
 " syntax on
 " }}}
+
+" Markdownファイルタイプの自動設定 {{{
+au BufRead,BufNewFile *.md set filetype=markdown
+set syntax=markdown
+" }}}
