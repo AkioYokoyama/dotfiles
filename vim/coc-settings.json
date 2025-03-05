@@ -7,6 +7,17 @@
             "initializationOptions": {
                 "storagePath": "/tmp/intelephense"
             }
+        },
+        "rubocop": {
+            "command": "rubocop",
+            "args": ["--lsp"],
+            "filetypes": ["ruby"]
+        }
+    },
+    "diagnostic.checkers": {
+        "ruby": {
+            "command": "ruby",
+            "args": ["-c", "%file%"]
         }
     }
 }
