@@ -66,10 +66,12 @@ inoremap <C-b> <Left>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 nnoremap Y y$
+nnoremap cyy vi(y
 nnoremap <CR> o<ESC>
 nnoremap gr gT
 nnoremap <C-l> 10l
 nnoremap <C-h> 10h
+nnoremap <c-[><c-[> :nohlsearch<CR><ESC>
 nnoremap <silent> <ESC><ESC> :nohlsearch<CR><ESC>
 nnoremap <silent> <space><space> :AnyJump<CR>
 nnoremap <silent> <LEADER><F12> :tabnew $MYVIMRC<CR>
@@ -89,20 +91,6 @@ nnoremap <c-@> <ESC>
 set laststatus=2
 set statusline=%<%f\ %m%r%h%w\ %l/%L\ %P
 set statusline+=%=%{'['.(&fenc!=''?&fenc:&enc).']['.&fileformat.']'}
-" }}}
-
-" ale {{{
-" 保存時のみ実行
-let g:ale_lint_on_save = 1
-let g:ale_lint_on_text_changed = 1
-" ファイルオープン時にチェックしない
-let g:ale_lint_on_enter = 0
-" 表示設定
-let g:ale_sign_error = 'x'
-let g:ale_sign_warning = '<<'
-
-nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-nmap <silent> <C-j> <Plug>(ale_next_wrap)
 " }}}
 
 " netrw {{{

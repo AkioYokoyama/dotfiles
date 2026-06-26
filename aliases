@@ -16,6 +16,7 @@ alias sound="afplay /System/Library/Sounds/Submarine.aiff"
 alias reload="source $HOME/.zshrc"
 alias lalias="vim $HOME/.local_aliases"
 alias vim="vim -p"
+alias mkdir="mkdir -p"
 
 # move
 alias vplug="cd $HOME/.vim/pack/dist/start"

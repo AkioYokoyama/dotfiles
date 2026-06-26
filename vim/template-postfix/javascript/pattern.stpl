@@ -14,3 +14,11 @@ onClick$
 
 onChange$
 	e: React.ChangeEvent<HTMLInputElement>
+
+des\.\(\S\+\)$
+	describe('{{$1}}', () => {
+	});
+
+it$
+	it('{{$1}}', () => {
+	});
