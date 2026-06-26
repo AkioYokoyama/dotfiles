@@ -66,6 +66,7 @@ inoremap <C-b> <Left>
 inoremap <C-e> <End>
 inoremap <C-d> <Delete>
 nnoremap Y y$
+nnoremap cyy vi(y
 nnoremap <CR> o<ESC>
 nnoremap gr gT
 nnoremap <C-l> 10l
